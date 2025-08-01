@@ -1,0 +1,60 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center mb-4">Log in</h2>
+      <form action="/login" method="POST" class="needs-validation" novalidate>
+        <!-- Username -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please enter a username.</div>
+        </div>
+
+        <!-- Email
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <div class="valid-feedback">Email looks good!</div>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div> -->
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <div class="valid-feedback">Password looks good!</div>
+          <div class="invalid-feedback">Password is required.</div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="d-grid">
+         <button type="submit" class="btn btn-outline-primary add-btn">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
